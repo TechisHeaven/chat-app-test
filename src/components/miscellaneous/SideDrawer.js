@@ -34,7 +34,7 @@ import ChatLoading from "../ChatLoading";
 import UserListItem from "../UserAvatar/UserListItem";
 import { getSender } from "../../config/ChatLogics";
 // import NotificationBadgee from "react-notification-badge"
-import {Effect} from "react-notification-badge"
+// import {Effect} from "react-notification-badge"
 
 const SideDrawer = () => {
   const [search, setSearch] = useState("");
