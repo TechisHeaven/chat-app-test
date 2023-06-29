@@ -18,11 +18,25 @@ const Homepage = () => {
       navigate("/chats")
     }
   }, [navigate]);
-
+  const fetchdata = async()=>{
+    let result = await fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "GET",
+      headers: {
+        "content-type":"application/json"
+      }
+    })
+    console.log(result)
+  }
 
 
   return (
     <Container maxW="xl" centerContent>
+      <button onClick={()=>{
+        fetchdata()
+        console.log("fetchdata")
+      }}>click
+
+      </button>
       <Box
         d="flex"
         justifyContent="center"
